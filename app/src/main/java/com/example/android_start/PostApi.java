@@ -16,13 +16,8 @@ import retrofit2.http.Path;
 public interface PostApi {
 
 
-    String root = "http://192.168.0.102:8000/";
+    String root = "http://192.168.0.104:8000/";
 
-
-
-    String base_local = root + "api/v1/";
-    String BASE_URL = base_local + "account/";
-    String POST_URL = base_local + "post/";
     String API_URL = root + "api/v1/";
 
 
@@ -31,10 +26,6 @@ public interface PostApi {
 
     @GET("post/list/")
     Call<List<PostModel>> getListPost();
-
-
-
-
 
 
 }
